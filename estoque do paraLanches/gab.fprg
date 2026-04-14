@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 01:32:16 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ1OzIwMjYtMDQtMTQ7IjEwOjE3OjMxICI7Mjg1NQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODQ1OzIwMjYtMDQtMTQ7IjAxOjMyOjE2ICI7MzsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="produto, usuario, senha" type="String" array="False" size=""/>
+            <output expression="&quot;usuario:&quot;" newline="True"/>
+            <input variable="usuario"/>
+            <if expression="usuario=&quot;paraLanches&quot;">
+                <then>
+                    <output expression="&quot;login correto&quot;" newline="True"/>
+                    <output expression="&quot;senha&quot;" newline="True"/>
+                    <input variable="senha"/>
+                    <if expression="senha=&quot;lanches&quot;">
+                        <then>
+                            <output expression="&quot;senha correta&quot;" newline="True"/>
+                            <output expression="&quot;produto est&#225; esgotado?&quot;" newline="True"/>
+                            <input variable="produto"/>
+                            <if expression="produto=&quot;s&quot; or senha=&quot;n&quot;">
+                                <then>
+                                    <output expression="&quot;precisa reabastecer&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;nao precisa reabastecer&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;senha incorreta&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;login incorreto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
